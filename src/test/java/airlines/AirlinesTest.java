@@ -81,7 +81,7 @@ public class AirlinesTest {
 
     @Test
     public void createAirlineWithEnvJson() throws IOException {
-        String path="src/test/resources/airlines/dev/airlinesApiData.json";
+        String path="src/test/resources/airlines.dev/airlinesApiData.json";
         Map<String,String> configs= JsonUtils.getJsonDataAsMap(System.getProperty("user.dir")+"/"+path);
         System.out.println(configs.get("createAirlineEndpoint"));
         String baseURI="https://api.instantwebtools.net/v1/airlines";
